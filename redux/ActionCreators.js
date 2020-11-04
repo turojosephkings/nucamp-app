@@ -19,8 +19,13 @@ export const postComment = (campsiteId, rating, author, text) => dispatch =>  {
         dispatch(addComment(newComment));
     }, 2000);
 
-    
-
+    fetch(baseUrl + "comments", {
+        method: "POST",
+        body: JSON.stringify(newComment),
+        headers: {
+            "Content-Type" : "application/json",
+        },
+    })
 }
 
 export const addComment  = comment => ({
