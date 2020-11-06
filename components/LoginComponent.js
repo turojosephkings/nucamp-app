@@ -130,7 +130,7 @@ class RegisterTab extends Component {
             lastname: '',
             email:'',
             remember: false,
-            imageUrl: baseUrl + 'images/logo.png'
+            imageUrl: baseUrl + './images/logo.png'
         };
     }
 
@@ -176,6 +176,7 @@ class RegisterTab extends Component {
     render() {
 
         return(
+            <SafeAreaView>
             <ScrollView>                    
                 <View style={styles.container}>
                     <View style={styles.imageContainer}>
@@ -253,6 +254,7 @@ class RegisterTab extends Component {
                     </View>
                 </View>
             </ScrollView>
+            </SafeAreaView>
         );
     }
 
