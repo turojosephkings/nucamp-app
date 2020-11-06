@@ -17,8 +17,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "co.nucamp.nucampsite.student",
+      "buildNumber": "1.0.0"
     },
+    "android": {
+      "package": "co.nucamp.nucampsite.student",
+      "versionCode": 1
+    },    
     "web": {
       "favicon": "./assets/favicon.png"
     }
